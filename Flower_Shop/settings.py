@@ -2,6 +2,7 @@
 
 from pathlib import Path
 from decouple import config
+import pytz
  
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -34,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'drf_yasg',
     'shop',
 ]
 
@@ -102,7 +104,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Dhaka'
+TIME_ZONE = 'Asia/Dhaka'
 
 USE_I18N = True
 
