@@ -4,10 +4,10 @@ from .models import Flower, Order
 class FlowerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Flower
-        fields = ['title', 'description', 'category' ]
+        fields = ['id','title', 'description', 'category','price', 'image' ]
 
 class OrderSerializer(serializers.ModelSerializer):
     flower = FlowerSerializer()   
     class Meta:
         model = Order
-        fields = ['user', 'flwoer', 'quantity','status']
+        fields = ['user', 'flower', 'quantity','status', 'ordered_at']

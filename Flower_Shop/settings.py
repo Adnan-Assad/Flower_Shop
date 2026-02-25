@@ -23,6 +23,14 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 ALLOWED_HOSTS = ["*", ".vercel.app"]
 
+
+
+
+
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 # AUTH_USER_MODEL = 'users.User'
 
 
