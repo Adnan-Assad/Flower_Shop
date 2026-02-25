@@ -17,6 +17,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
  
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 DEBUG = True
 
 SECRET_KEY = config('SECRET_KEY')
@@ -29,8 +33,8 @@ ALLOWED_HOSTS = ["*", ".vercel.app"]
 
 
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = BASE_DIR / 'media'
 # AUTH_USER_MODEL = 'users.User'
 
 
@@ -144,8 +148,7 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
